@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Yevgeniy Alishevets](https://up.htmlacademy.ru/htmlcss/18/user/194706).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Кравченко  (https://htmlacademy.ru/profile/id13921)`.
 
 ---
 
