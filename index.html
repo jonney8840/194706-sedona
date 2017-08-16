@@ -5,8 +5,115 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <img class="small-logo" src="http://placehold.it/50x50" alt="Логотип Седона" width="" height="">
+        <ul class="top-menu">
+          <li><a title="Информация" href="#">Информация</a></li>
+          <li><a title="Открыть галерею" href="#">Фото и видео</a></li>
+          <li><a title="Карта" href="#">Карта штата</a></li>
+          <li><a title="Просмотр гостиниц" href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <img class="welcome-img" src="http://placehold.it/500x150" alt="Добро пожаловать в Седону" width="" height="">
+    </header>
+    <main class="container">
+      <div class="slogan">
+        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+      <section class="features">
+        <div class="features-container">
+          <div class="features-item">
+            <h3>Настоящий<br> городок</h3>
+            <span>-№1-</span>
+            <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img class="features-picture-town" src="http://placehold.it/350x100" alt="Настоящий городок" width="" height="">
+          <ul class="features-tips">
+            <li class="features-tips-living">
+              <span>Жилье</span>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="features-tips-food">
+              <span>Еда</span>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="features-tips-souvenir">
+              <span>Сувениры</span>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </div>
+        <div class="features-container">
+          <div class="features-item">
+            <h3>Там есть<br> мост дьявола</h3>
+            <span>-№2-</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <img class="features-picture-bridge" src="http://placehold.it/350x100" alt="Там есть мост дьявола" width="" height="">
+        </div>
+        <div class="features-container">
+          <div class="features-item">
+            <h3>Небольшая<br> площадь</h3>
+            <span>-№3-</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="features-item">
+            <h3>Красивая<br> дорога</h3>
+            <span>-№4-</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="features-item">
+            <h3>Мало<br> туристов</h3>
+            <span>-№5-</span>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+      <section class="search">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <span class="show-search-btn">Поиск гостиницы в Седоне</span>
+      </section>
+      <div class="map">
+        <img src="http://placehold.it/768x400" alt="Карта" width="" height="">
+      </div>
+    </main>
+    <footer class="main-footer">
+      <p class="hashtag">#VISITSEDONA</p>
+      <div class="social">
+        <ul>
+          <li><a title="Мы в Twitter" class="social-btn" href="#">Twitter</a></li>
+          <li><a title="Мы в Facebook" class="social-btn" href="#">Facebook</a></li>
+          <li><a title="Мы на YouTube" class="social-btn" href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <p class="copyright">
+        <b>Website by</b>
+        <a title="HTML Академия" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="htmlacademy-logo" src="http://placehold.it/90x35" alt="HTML Академия" width="" height="">
+        </a>
+      </p>
+    </footer>
+    <section class="modal-search">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+        <label for="check-in-date">Дата заезда:</label>
+        <input type="text" name="check-in" id="check-in-date" value="24 апреля 2017">
+        <button type="button"><img src="http://placehold.it/10x10" alt="Открыть календарь"></button>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+        <label for="check-out-date">Дата выезда:</label>
+        <input type="text" name="check-out" id="check-out-date" value="4 июля 2017">
+        <button type="button"><img src="http://placehold.it/10x10" alt="Открыть календарь"></button>
 
+        <label for="adults-field">Взрослые:</label>
+        <input type="number" name="adults" id="adults-field" value="2">
+
+        <label for="children-field">Дети:</label>
+        <input type="number" name="children" id="children-field" value="0">
+
+        <input type="submit" value="Найти">
+      </form>
+    </section>
   </body>
 </html>
