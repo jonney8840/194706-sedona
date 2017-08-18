@@ -8,7 +8,9 @@
     <div class="container">
       <header class="main-header">
         <nav class="main-nav">
-          <img src="http://placehold.it/50x50" width="" height="" alt="Логотип Седона">
+          <a class="logo">
+            <img src="http://placehold.it/50x50" width="" height="" alt="Логотип Седона">
+          </a>
           <ul class="main-nav-list">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
@@ -28,7 +30,7 @@
         <section class="features">
           <div class="features-item">
             <h2 class="features-title">Настоящий городок</h2>
-            <span>&#8211№1&#8211</span>
+            <span class="features-num">&#8211;№1&#8211;</span>
             <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="features-image">
@@ -51,22 +53,22 @@
           </div>
           <div class="features-item">
             <h2 class="features-title">Там есть мост дьявола</h2>
-            <span>&#8211№2&#8211</span>
+            <span class="features-num">&#8211;№2&#8211;</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <div class="features-item features-item-dark">
             <h2 class="features-title">Небольшая площадь</h2>
-            <span>&#8211№3&#8211</span>
+            <span class="features-num">&#8211;№3&#8211;</span>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="features-item features-item-dark">
             <h2 class="features-title">Красивая дорога</h2>
-            <span>&#8211№4&#8211</span>
+            <span class="features-num">&#8211;№4&#8211;</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="features-item features-item-dark">
             <h2 class="features-title">Мало туристов</h2>
-            <span>&#8211№5&#8211</span>
+            <span class="features-num">&#8211;№5&#8211;</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </div>
         </section>
@@ -80,29 +82,29 @@
         <div class="map">
           <img src="http://placehold.it/768x400" width="" height="" alt="Карта">
         </div>
-      <div class="modal-search">
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <label for="check-in-date">Дата заезда:</label>
-          <input type="text" name="check-in" id="check-in-date" value="24 апреля 2017">
-          <button class="icon-calendar" type="button"></button>
+        <div class="modal-search">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label for="check-in-date">Дата заезда:</label>
+            <input type="text" name="check-in" id="check-in-date" value="24 апреля 2017">
+            <button class="icon-calendar" type="button"></button>
 
-          <label for="check-out-date">Дата выезда:</label>
-          <input type="text" name="check-out" id="check-out-date" value="4 июля 2017">
-          <button class="icon-calendar" type="button"></button>
+            <label for="check-out-date">Дата выезда:</label>
+            <input type="text" name="check-out" id="check-out-date" value="4 июля 2017">
+            <button class="icon-calendar" type="button"></button>
 
-          <label for="adults-field">Взрослые:</label>
-          <button class="icon-minus" type="button"></button>
-          <input type="number" name="adults" id="adults-field" value="2">
-          <button class="icon-plus" type="button"></button>
+            <label for="adults-field">Взрослые:</label>
+            <button class="icon-minus" type="button"></button>
+            <input type="number" name="adults" id="adults-field" value="2">
+            <button class="icon-plus" type="button"></button>
 
-          <label for="children-field">Дети:</label>
-          <button class="icon-minus" type="button"></button>
-          <input type="number" name="children" id="children-field" value="0">
-          <button class="icon-plus" type="button"></button>
+            <label for="children-field">Дети:</label>
+            <button class="icon-minus" type="button"></button>
+            <input type="number" name="children" id="children-field" value="0">
+            <button class="icon-plus" type="button"></button>
 
-          <button class="search-form-btn" type="submit">Найти"</button>
-        </form>
-      </div>
+            <button class="search-form-btn" type="submit">Найти"</button>
+          </form>
+        </div>
       <div class="footer-wrapper">
         <p class="hashtag">#visitsedona</p>
         <div class="social">
