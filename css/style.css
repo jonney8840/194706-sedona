@@ -1,0 +1,21 @@
+body {
+  font-size: 14px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+  color: #000000;
+/*  text-transform: uppercase;  */
+}
+
+h1.main-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+h2.search-title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+}
