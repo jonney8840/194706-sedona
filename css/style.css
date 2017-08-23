@@ -1,6 +1,7 @@
 body {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 14px;
+  font-weight: bold;
   line-height: 21px;
   color: #000000;
 /*  text-transform: uppercase;  */
@@ -8,12 +9,10 @@ body {
 
 .main-title {
   font-size: 21px;
-  font-weight: bold;
   line-height: 26px;
 }
 
 .search-title {
   font-size: 30px;
-  font-weight: bold;
   line-height: 36px;
 }
