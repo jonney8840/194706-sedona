@@ -1,9 +1,12 @@
+html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 14px;
-  font-weight: bold;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
@@ -18,6 +21,7 @@ a {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-nav {
@@ -29,6 +33,7 @@ a {
 }
 
 .main-nav-list a {
+  font-weight: bold;
   color: #000000;
 }
 
@@ -42,21 +47,36 @@ a {
 }
 
 .promo {
-  background-image: url(/img/background.jpg);
-/*  background-position: top center;  */
+  height: 773px;
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
+  background-size: 100% 773px;
+}
+
+.promo::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 57px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  top: 716px;
+
+  background: url(../img/Shape.png) no-repeat;
 }
 
 .intro {
   text-align: center;
 }
 
-.intro .main-title {
+.main-title {
+  font-weight: bold;
   font-size: 21px;
 }
 
 .intro p {
-  font-weight: normal;
   color: #333333;
 }
 
@@ -67,17 +87,36 @@ a {
   background-color: #81b3d2;
 }
 
-.features-item .features-title {
+.features-item-light .features-title {
+  font-weight: bold;
   font-size: 21px;
+  padding-top: 98px;
 }
 
-.features-item .features-num,
-.features-item p {
-  font-weight: normal;
+.features-title-living {
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.features-title-food {
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.features-title-souvenirs {
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .features-item-light {
   background-color: #ffffff;
+}
+
+.features-item-dark {
+  background-color: #eeeeee;
 }
 
 .features-item-light .features-title,
@@ -91,44 +130,23 @@ a {
   color: #333333;
 }
 
-.features-item-dark {
-  background-color: #eeeeee;
-}
-
-.living-svg {
-  background-color: transparent;
-  width: 75px;
-  height: 72px;
-}
-
-.food-svg {
-  background-color: transparent;
-  width: 74px;
-  height: 70px;
-}
-
-.souvenirs-svg {
-  background-color: transparent;
-  width: 64px;
-  height: 76px;
-}
-
 .search {
   text-align: center;
 }
 
-.search .search-title {
+.search-title {
+  font-weight: bold;
   font-size: 30px;
   line-height: 36px;
 }
 
 .search p {
-  font-weight: normal;
   line-height: 24px;
   color: #333333;
 }
 
 .search .search-btn {
+  font-weight: bold;
   font-size: 21px;
   color: #ffffff;
   background-color: #766357;
@@ -142,6 +160,10 @@ a {
 .search .search-btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+}
+
+.search-form-item {
+  font-weight: bold;
 }
 
 .search-form-item input {
@@ -162,6 +184,7 @@ a {
 
 .search-form-btn {
   font: inherit;
+  font-weight: bold;
   font-size: 21px;
   color: #ffffff;
   border: none;
@@ -186,7 +209,6 @@ a {
 .icon-calendar-svg {
   width: 21px;
   height: 22px;
-  background-color: transparent;
   fill: #a9a9a9;
 }
 
@@ -204,7 +226,7 @@ a {
   height: 11px;
   border: none;
   background-color: #f2f2f2;
-  background-image: url(/img/icon-minus.png);
+  background-image: url(../img/icon-minus.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -214,7 +236,7 @@ a {
   height: 11px;
   border: none;
   background-color: #f2f2f2;
-  background-image: url(/img/icon-plus.png);
+  background-image: url(../img/icon-plus.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -226,11 +248,13 @@ a {
 }
 
 .hashtag {
+  font-weight: bold;
   font-size: 21px;
 }
 
 .social ul {
   list-style: none;
+  font-weight: bold;
 }
 
 .social-btn {
@@ -251,21 +275,18 @@ a {
 .social-btn-tw {
   width: 17px;
   height: 15px;
-  background-color: transparent;
   fill: #ffffff;
 }
 
 .social-btn-fb {
   width: 12px;
   height: 22px;
-  background-color: transparent;
   fill: #ffffff;
 }
 
 .social-btn-yt {
   width: 20px;
   height: 16px;
-  background-color: transparent;
   fill: #ffffff;
 }
 
@@ -275,7 +296,6 @@ a {
 .social-btn-tw:focus,
 .social-btn-fb:focus,
 .social-btn-yt:focus {
-  background-color: transparent;
   fill: #ffffff;
 }
 
@@ -293,7 +313,6 @@ a {
 .htmlacademy-logo {
   width: 115px;
   height: 41px;
-  background-color: transparent;
   fill: #231f20;
 }
 
@@ -307,15 +326,14 @@ a {
 }
 
 
-
+/* catalog.html */
 .nav-item-current a {
   color: #766357;
 }
 
 .hotel-filter {
-  background-image: url(/img/filter-background.jpg);
+  background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
-/*  background-position: center center;  */
 }
 
 .hotel-filter-form {
@@ -323,11 +341,13 @@ a {
   line-height: 21px;
 }
 
-.hotel-filter-group {
+.hotel-filter-group,
+.hotel-filter-price {
   border: none;
 }
 
 .hotel-filter-title {
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -335,21 +355,15 @@ a {
   list-style: none;
 }
 
-.hotel-filter-form label {
-  font-weight: normal;
-}
-
 .checkbox-on {
   width: 27px;
   height: 23px;
-  background-color: transparent;
   fill: #ffffff;
 }
 
 .checkbox-off {
   width: 23px;
   height: 23px;
-  background-color: transparent;
   fill: #ffffff;
 }
 
@@ -360,7 +374,6 @@ a {
 
 .price-fields input {
   font: inherit;
-  font-weight: normal;
   border: none;
   color: #ffffff;
   background-color: transparent;
@@ -368,7 +381,6 @@ a {
 
 .hotel-filter-btn {
   font: inherit;
-  font-weight: normal;
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -388,6 +400,7 @@ a {
 }
 
 .filter-sort-title {
+  font-weight: bold;
   font-size: 21px;
 }
 
@@ -398,7 +411,6 @@ a {
 .filter-sort-caption,
 .sort-list a {
   font-size: 12px;
-  font-weight: normal;
   line-height: 18px;
 }
 
@@ -450,6 +462,7 @@ a {
 }
 
 .filter-result-title a {
+  font-weight: bold;
   font-size: 21px;
   color: #000000;
 }
@@ -464,12 +477,12 @@ a {
 }
 
 .filter-result-info span {
-  font-weight: normal;
   line-height: 21px;
   color: #333333;
 }
 
 .filter-result-btn {
+  font-weight: bold;
   line-height: 21px;
   color: #ffffff;
   background-color: #81b3d2;
@@ -500,7 +513,6 @@ a {
 }
 
 .rating {
-  font-weight: normal;
   line-height: 21px;
   color: #666666;
   background-color: #f2f2f2;
@@ -509,24 +521,23 @@ a {
 .four-stars {
   width: 72px;
   height: 17px;
-  background-image: url(/img/star.png);
+  background-image: url(../img/star.svg);
   background-repeat: repeat-x;
 }
 
 .three-stars {
   width: 54px;
   height: 17px;
-  background-image: url(/img/star.png);
+  background-image: url(../img/star.svg);
   background-repeat: repeat-x;
 }
 
 .two-stars {
   width: 36px;
   height: 17px;
-  background-image: url(/img/star.png);
+  background-image: url(../img/star.svg);
   background-repeat: repeat-x;
 }
-
 
 
 
