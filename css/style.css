@@ -18,8 +18,7 @@ a {
 
 .container {
   margin: 0 auto;
-  min-width: 768px;
-  max-width: 1200px;
+  width: 1200px;
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
@@ -93,6 +92,7 @@ a {
   position: relative;
   padding-top: 76px;
   text-align: center;
+  background-color: #889caa;
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -107,7 +107,9 @@ a {
   height: 57px;
   left: 0;
   bottom: 0;
-  background: url(../img/shape-promo.png) no-repeat;
+  background: url(../img/shape-promo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 57px;
 }
 
 .intro {
@@ -178,7 +180,7 @@ p.road-info {
 
 .features-image img {
   position: absolute;
-  width: 100% auto;
+  width: 100%;
   height: auto;
   top: -78px;
 }
@@ -235,19 +237,20 @@ p.road-info {
 .search {
   margin: 0 auto;
   padding-top: 50px;
-  max-width: 47.3334%;
   text-align: center;
 }
 
 .search-title {
   margin: 0 auto 25px;
+  max-width: 47.3%;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
 }
 
 .search p {
-  margin: 0 0 46px;
+  margin: 0 auto 46px;
+  max-width: 47.3%;
   line-height: 24px;
   color: #333333;
 }
@@ -276,10 +279,12 @@ p.road-info {
 
 .main-footer {
   position: relative;
+  overflow: hidden;
 }
 
 .modal-search {
   position: absolute;
+  display: none;
   width: 568px;
   margin-left: -284px;
   padding: 55px;
@@ -289,18 +294,22 @@ p.road-info {
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
 }
-/*
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .search-show {
   display: block;
   animation: bounce 0.6s;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-100px);
-  }
-}
-*/
 .search-form {
   display: flex;
   flex-wrap: wrap;
@@ -319,6 +328,7 @@ p.road-info {
 
 .search-form-item input {
   width: 346px;
+  height: 38px;
   padding: 6px 13px;
   box-sizing: border-box;
   /*font: inherit;*/
@@ -415,15 +425,12 @@ p.road-info {
   position: absolute;
   margin: 0;
   padding: 0;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   left: 130px;
   top: 13px;
   border: none;
   background-color: transparent;
-/*  background-image: url(../img/icon-minus.png);
-  background-repeat: no-repeat;
-  background-position: center center;*/
   cursor: pointer;
 }
 
@@ -432,8 +439,8 @@ p.road-info {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 11px;
-  height: 2px;
+  width: 12px;
+  height: 3px;
   background-color: #a9a9a9;
   transform: translate(-50%, -50%);
 }
@@ -451,15 +458,12 @@ p.road-info {
   position: absolute;
   margin: 0;
   padding: 0;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   right: 13px;
   top: 13px;
   border: none;
   background-color: transparent;
-  /*background-image: url(../img/icon-plus.png);
-  background-repeat: no-repeat;
-  background-position: center center;*/
   cursor: pointer;
 }
 
@@ -468,8 +472,8 @@ p.road-info {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 11px;
-  height: 2px;
+  width: 12px;
+  height: 3px;
   background-color: #a9a9a9;
   transform: translate(-50%, -50%);
 }
@@ -479,7 +483,7 @@ p.road-info {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 2px;
+  width: 3px;
   height: 11px;
   background-color: #a9a9a9;
   transform: translate(-50%, -50%);
@@ -526,8 +530,17 @@ input[type="text"]::-ms-clear {
 
 .map {
   height: 593px;
-/*  background-image: url(../img/map.jpg);
-  background-repeat: no-repeat;  */
+  background-color: #d9e0c1;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+}
+
+.map iframe {
+  width: 100%;
+  height: 593px;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-wrapper {
@@ -537,23 +550,22 @@ input[type="text"]::-ms-clear {
   width: 100%;
   box-sizing: border-box;
   align-items: center;
-  padding: 36px 6%;
+  padding: 36px 0;
   background-color: rgba(249, 251, 246, 0.9);
 }
 
 .page-footer {
   display: flex;
   align-items: center;
-  padding: 36px 6%;
+  padding: 36px 0;
   background-color: #fefefe;
 }
 
 .hashtag {
   margin: 0;
-  padding-left: 60px;
+  text-align: center;
   box-sizing: border-box;
   width: 33.3334%;
-
   font-weight: bold;
   font-size: 21px;
 }
@@ -632,7 +644,7 @@ input[type="text"]::-ms-clear {
 .copyright {
   width: 33.3334%;
   margin: 0;
-  padding-left: 125px;
+  text-align: center;
   box-sizing: border-box;
 }
 
@@ -667,6 +679,7 @@ input[type="text"]::-ms-clear {
 
 .hotel-filter {
   padding: 27px 6% 32px;
+  background-color: #5d7386;
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
   background-position: 0 -56px;
@@ -738,6 +751,10 @@ input[type="text"]::-ms-clear {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+}
+
+input:checked ~ label::before {
+  display: none;
 }
 
 input:checked ~ label::after {
@@ -904,6 +921,7 @@ input:disabled ~ label::after {
 
 .filter-sort-caption {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 40px;
 }
 
@@ -995,11 +1013,12 @@ input:disabled ~ label::after {
 
 .filter-result-info {
   display: flex;
-  width: 25%;
+  width: 31%;
   flex-wrap: wrap;
 }
 
 .filter-result-title {
+  width: 100%;
   margin: 0;
   padding-bottom: 5px;
 }
@@ -1019,13 +1038,8 @@ input:disabled ~ label::after {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.housing-type,
-.housing-price {
-  min-width: 110px;
-}
-
-.housing-type {
-  margin-right: 6px;
+.housing-info {
+  width: 37%;
 }
 
 .filter-result-info span {
@@ -1075,7 +1089,9 @@ input:disabled ~ label::after {
 }
 
 .rating {
-  display: inline-block;  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
   padding: 3px 15px;
   line-height: 21px;
   color: #666666;
