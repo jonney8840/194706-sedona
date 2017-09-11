@@ -213,8 +213,8 @@ p.road-info {
 .features-title-food {
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: auto 76px;
+  background-position: 45% 0;
+  background-size: 74px 76px;
 }
 
 .features-title-souvenirs {
@@ -542,23 +542,26 @@ p.road-info {
 }
 
 /* Убрать стрелки для input type="number" */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.search-form-item input[type="number"]::-webkit-outer-spin-button,
+.search-form-item input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  appearance: normal;
   margin: 0;
 }
 
-input[type="number"] {
+.search-form-item input[type="number"] {
   -moz-appearance: textfield;
+  appearance: normal;
 }
 
-input[type="number"]:hover,
-input[type="number"]:focus {
+.search-form-item input[type="number"]:hover,
+.search-form-item input[type="number"]:focus {
   -moz-appearance: number-input;
+  appearance: field;
 }
 
 /* Убрать крестик очистки для IE для input type="text" */
-input[type="text"]::-ms-clear {
+.search-form-item input[type="text"]::-ms-clear {
   display: none;
 }
 
@@ -789,14 +792,14 @@ input[type="text"]::-ms-clear {
 }
 
 .hotel-filter-option {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .hotel-filter-option label {
   display: inline-block;
   position: relative;
   padding-left: 40px;
-  line-height: 22px;
+  line-height: 21px;
   vertical-align: top;
 }
 
@@ -885,8 +888,9 @@ input:disabled ~ label::after {
 
 .price-controls label {
   display: inline-block;
+  padding-top: 6px;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -931,6 +935,9 @@ input:disabled ~ label::after {
 }
 
 .range-toggle:hover {
+  top: -10px;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
   background: #1c4f80;
 }
 
@@ -948,7 +955,7 @@ input:disabled ~ label::after {
   margin-left: 85px;
   padding: 6px 31px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -1078,7 +1085,7 @@ input:disabled ~ label::after {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 25px 6% 20px;
+  padding: 25px 6% 22px;
 }
 
 .filter-result-image {
@@ -1116,10 +1123,8 @@ input:disabled ~ label::after {
 }
 
 .housing-info {
-  width: 37%;
-}
-
-.filter-result-info span {
+  width: 36%;
+  padding-bottom: 2px;
   line-height: 21px;
   text-align: left;
   color: #333333;
