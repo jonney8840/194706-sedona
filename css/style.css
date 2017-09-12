@@ -816,11 +816,11 @@ p.road-info {
   cursor: pointer;
 }
 
-input:checked ~ label::before {
+ .filter-checkbox:checked ~ label::before {
   display: none;
 }
 
-input:checked ~ label::after {
+.filter-checkbox:checked ~ label::after {
   content: "";
   position: absolute;
   width: 27px;
@@ -832,9 +832,9 @@ input:checked ~ label::after {
   cursor: pointer;
 }
 
-input:disabled ~ label,
-input:disabled ~ label::before,
-input:disabled ~ label::after {
+.filter-checkbox:disabled ~ label,
+.filter-checkbox:disabled ~ label::before,
+.filter-checkbox:disabled ~ label::after {
   opacity: 0.5;
   pointer-events: none;
 }

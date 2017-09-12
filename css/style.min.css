@@ -115,9 +115,9 @@ p.road-info{width:265px}
 .hotel-filter-option{margin-bottom:25px}
 .hotel-filter-option label{display:inline-block;position:relative;padding-left:40px;line-height:21px;vertical-align:top}
 .hotel-filter-option label::before{content:"";position:absolute;width:19px;height:19px;top:0;left:0;background-color:transparent;border:2px solid #fff;border-radius:2px;cursor:pointer}
-input:checked ~ label::before{display:none}
-input:checked ~ label::after{content:"";position:absolute;width:27px;height:23px;top:0;left:0;background-image:url(../img/checkbox-on.svg);background-repeat:no-repeat;cursor:pointer}
-input:disabled ~ label,input:disabled ~ label::before,input:disabled ~ label::after{opacity:.5;pointer-events:none}
+.filter-checkbox:checked ~ label::before{display:none}
+.filter-checkbox:checked ~ label::after{content:"";position:absolute;width:27px;height:23px;top:0;left:0;background-image:url(../img/checkbox-on.svg);background-repeat:no-repeat;cursor:pointer}
+.filter-checkbox:disabled ~ label,.filter-checkbox:disabled ~ label::before,.filter-checkbox:disabled ~ label::after{opacity:.5;pointer-events:none}
 .hotel-filter-list li:nth-child(3){margin-bottom:0}
 .checkbox-on{width:27px;height:23px;fill:#fff}
 .checkbox-off{width:23px;height:23px;fill:#fff}
